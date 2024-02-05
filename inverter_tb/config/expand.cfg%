@@ -1,0 +1,21 @@
+//Revision 12
+//NOTE
+// Default template for spectre
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config inverter_tb;
+design eecs170D.inverter_tb:schematic;
+liblist myLib;
+
+viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice, dspf;
+stoplist spectre;
+
+
+inst (eecs170D.inverter_tb:schematic).I0 binding :extracted;
+inst (eecs170D.inverter_tb:schematic).I6 binding :schematic;
+
+
+endconfig
